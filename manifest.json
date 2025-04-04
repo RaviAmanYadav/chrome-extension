@@ -4,18 +4,22 @@
   "version": "0.0.1",
   "description": "My Extension for NEWS",
   "author": "newsdectactor",
-  "default_locale": "en",
   "icons": {
     "16": "icon.png",
     "48": "icon.png",
     "128": "icon.png"
   },
   "action": {
+    "default_popup": "popup.html",
     "default_icon": {
       "16": "icon.png",
       "48": "icon.png",
       "128": "icon.png"
     },
     "default_title": "NEWS"
+  },
+  "options_page": "option.html",
+  "background": {
+    "service_worker": "background.js"
   }
 }
